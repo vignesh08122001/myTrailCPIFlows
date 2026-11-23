@@ -278,7 +278,7 @@
                 </ifl:property>
                 <ifl:property>
                     <key>loopId</key>
-                    <value>StandardLoopCharacteristics_1795456907622</value>
+                    <value>StandardLoopCharacteristics_1795458543107</value>
                 </ifl:property>
                 <ifl:property>
                     <key>processId</key>
@@ -307,8 +307,8 @@
             </bpmn2:extensionElements>
             <bpmn2:incoming>SequenceFlow_40</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_41</bpmn2:outgoing>
-            <bpmn2:standardLoopCharacteristics id="StandardLoopCharacteristics_1795456907622" loopMaximum="6">
-                <bpmn2:loopCondition id="FormalExpression_1795456907622" xsi:type="bpmn2:tFormalExpression">${property.status} = 'RUNNING'</bpmn2:loopCondition>
+            <bpmn2:standardLoopCharacteristics id="StandardLoopCharacteristics_1795458543107" loopMaximum="6">
+                <bpmn2:loopCondition id="FormalExpression_1795458543107" xsi:type="bpmn2:tFormalExpression">${property.status} = 'RUNNING'</bpmn2:loopCondition>
             </bpmn2:standardLoopCharacteristics>
         </bpmn2:callActivity>
         <bpmn2:endEvent id="EndEvent_2" name="End">
@@ -417,10 +417,6 @@
                 <di:waypoint x="446.9171974522293" xsi:type="dc:Point" y="408.0"/>
                 <di:waypoint x="506.9171974522293" xsi:type="dc:Point" y="408.0"/>
             </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="MessageFlow_7" id="BPMNEdge_MessageFlow_7" sourceElement="BPMNShape_Participant_1" targetElement="BPMNShape_StartEvent_2">
-                <di:waypoint x="119.0" xsi:type="dc:Point" y="95.0"/>
-                <di:waypoint x="305.0" xsi:type="dc:Point" y="95.0"/>
-            </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_39" id="BPMNEdge_SequenceFlow_39" sourceElement="BPMNShape_StartEvent_2" targetElement="BPMNShape_CallActivity_8">
                 <di:waypoint x="321.0" xsi:type="dc:Point" y="95.0"/>
                 <di:waypoint x="381.0" xsi:type="dc:Point" y="95.0"/>
@@ -432,6 +428,10 @@
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_41" id="BPMNEdge_SequenceFlow_41" sourceElement="BPMNShape_CallActivity_25" targetElement="BPMNShape_EndEvent_2">
                 <di:waypoint x="641.0" xsi:type="dc:Point" y="95.0"/>
                 <di:waypoint x="701.0" xsi:type="dc:Point" y="95.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="MessageFlow_7" id="BPMNEdge_MessageFlow_7" sourceElement="BPMNShape_Participant_1" targetElement="BPMNShape_StartEvent_2">
+                <di:waypoint x="119.0" xsi:type="dc:Point" y="95.0"/>
+                <di:waypoint x="305.0" xsi:type="dc:Point" y="95.0"/>
             </bpmndi:BPMNEdge>
         </bpmndi:BPMNPlane>
     </bpmndi:BPMNDiagram>
